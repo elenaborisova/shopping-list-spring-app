@@ -14,6 +14,11 @@ public class CategoryEntity extends BaseEntity {
     public CategoryEntity() {
     }
 
+    public CategoryEntity(CategoryNameEnum name, String description) {
+        setName(name);
+        setDescription(description);
+    }
+
     @Enumerated(EnumType.STRING)
     public CategoryNameEnum getName() {
         return name;
